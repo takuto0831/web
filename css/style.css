@@ -1,8 +1,18 @@
-/***
-/	style
-***/
-.rightside {
-	width:50%;
-	height:200px;
-	float: right;
+.right {
+    position: absolute;
+    bottom: 0px; /** 場合によっては微調整 **/
+    right: 0px;
+}
+.cover::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,.3) radial-gradient(rgba(0,0,0,.3) 25%, transparent 0) center / 5px 5px;
+}
+.icon-large{
+	font-size: 5.0em;
 }

@@ -5,59 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>
-        li{
-            border:1px solid blue;
-            display: inline-block;
-        }
-        .fa{
-            padding:15px;
-            padding-bottom: 15px;
-            padding-top:15px;
-        }
-        a{
-            display: block;
-        }
-        </style>
     <title>Document</title>
-    <link id='css' rel='stylesheet' href='./css/style.css' />
+    <link rel='stylesheet' href='css/style.css' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <style>
+        header {
+            position: relative;
+            height: 50vh;
+        }
+        header {
+            background: url(images/header.jpg) center / cover;
+        }
+    </style>
 </head>
       
 <body>
-    <h2>
-        This is my homepage!! (in development ...)
-    </h2>
-    <div class="rightside">
-        <ul class="socialmediaicons">
-        　  <li><a href="https://www.facebook.com/takuto.kotsubo"><i class="fa fa-facebook"></i></a></li>
-        　  <li><a href="https://www.linkedin.com/in/takut0/"><i class="fa fa-linkedin"></i></a></li>
-        　  <li><a href="https://twitter.com/airspace_nobo"><i class="fa fa-twitter"></i></a></li>
-        　  <li><a href="https://github.com/takuto0831"><i class="fa fa-github"></i></a></li>
-        </ul>
-    </div>
-    
-    <form>
-        <p>今日の気分は？</p>
-        <select name="kibun">
-            <option value="saikou">めちゃいい！！</option>
-            <option value="botiboti">まあまあいい！</option>
-            <option value="hutuu">普通</option>
-            <option value="saiaku">最悪・・</option>
-        </select></form>
-    <!--
-        <a href="#" onclick='changeLang("jp")'>ボタン</a>
-    -->
-    <a href="#" onclick="js_alert()">ボタンを押してね!!</a>
+    <header>
+        <div class="text">
+            <h1><a href="#">This is my portfolio!</a></h1>
+            <p>Welcome to my homepage! This page is currentry under developmennt..</p>
+        </div>
+        <div class="right">
+            <nav>
+                <a href="https://www.facebook.com/takuto.kotsubo"><i class="fa fa-facebook fa-3x"></i></a>
+            　  <a href="https://www.linkedin.com/in/takut0/"><i class="fa fa-linkedin fa-3x"></i></a>
+            　  <a href="https://twitter.com/airspace_nobo"><i class="fa fa-twitter fa-3x"></i></a>
+            　  <a href="https://github.com/takuto0831"><i class="fa fa-github fa-3x"></i></a>
+            </nav>
+        </div>
+    </header>
 
+    <main>
+        <article>
+            <h1>自己紹介!!</h1>
+            <h2></h2>
+            <time datetime="2020-05-10">10 May 2020</time>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at culpa ut rerum blanditiis voluptate odio consectetur, fugit dolorem commodi natus! Necessitatibus fugit veritatis alias natus, minus nulla ullam ad.
+            </div>
+        </article>
+    </main>
 
-
+    <footer>
+        <small>
+            @ 2020 exmple.com
+        </small>
+    </footer>
+         <!--
+        <form>
+            <p>今日の気分は？</p>
+            <select name="kibun">
+                <option value="saikou">めちゃいい！！</option>
+                <option value="botiboti">まあまあいい！</option>
+                <option value="hutuu">普通</option>
+                <option value="saiaku">最悪・・</option>
+            </select></form>
+       
+            <a href="#" onclick='changeLang("jp")'>ボタン</a>
+            <a href="#" onclick="js_alert()">ボタンを押してね!!</a>
+        -->
 </body>
-<script type='text/javascript' src='./js/main.js'></script>
-<script>
-    function js_alert() {
-        alert("Pushed!");
-    }
-</script>
 </html>
