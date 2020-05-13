@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
-<!- ページ情報 (表示されない) ->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Takuto's homepage</title>
+    <title>Takuto's Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="デスク環境や使用言語を紹介する">
+    <!--<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">-->
     <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-
 </head>
       
 <body>
+    <div id="container">
+
     <header>
-        <figure>
-        <img src="images/header.jpeg" alt="header">
-        <figcaption class="decorator">
-            Welcome to my homepage! Learn more about me!! This page is currentry under developmennt. 
-        </figcaption>
-        <div class="right">
+        <!--<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE WEB SITE"></a></h1>-->
+        <!--スライドショー-->
+        <aside id="mainimg">
+        <img src="images/header1.jpeg" alt="" class="slide0">
+        <img src="images/header1.jpeg" alt="" class="slide1">
+        <img src="images/header2.jpeg" alt="" class="slide2">
+        <img src="images/header3.jpeg" alt="" class="slide3">
+        </aside>    
+        <div class="header_icon_position">
             <nav>
-                <a href="https://www.facebook.com/takuto.kotsubo"><i class="fab fa-facebook fa-3x fa-fw my-skyblue"></i></a>
-                <a href="https://www.linkedin.com/in/takut0/"><i class="fab fa-linkedin fa-3x fa-fw my-skyblue"></i></a>
-                <a href="https://twitter.com/airspace_nobo"><i class="fab fa-twitter fa-3x fa-fw my-skyblue"></i></a>
-                <a href="https://github.com/takuto0831"><i class="fab fa-github fa-3x fa-fw my-skyblue"></i></a>
-                <a href="https://hub.docker.com/u/takut0"><i class="fab fa-docker fa-3x fa-fw my-skyblue"></i></a>
-                <a href="https://www.amazon.co.jp/hz/wishlist/ls/2GYLXBS8T3EG8?&sort=default"><i class="fab fa-amazon fa-3x fa-fw my-skyblue"></i></a>
+                <a href="https://www.facebook.com/takuto.kotsubo"><i class="fab fa-facebook fa-3x fa-fw header_icon_color"></i></a>
+                <a href="https://www.linkedin.com/in/takut0/"><i class="fab fa-linkedin fa-3x fa-fw header_icon_color"></i></a>
+                <a href="https://twitter.com/airspace_nobo"><i class="fab fa-twitter fa-3x fa-fw header_icon_color"></i></a>
+                <a href="https://github.com/takuto0831"><i class="fab fa-github fa-3x fa-fw header_icon_color"></i></a>
+                <a href="https://hub.docker.com/u/takut0"><i class="fab fa-docker fa-3x fa-fw header_icon_color"></i></a>
+                <a href="https://www.amazon.co.jp/hz/wishlist/ls/2GYLXBS8T3EG8?&sort=default"><i class="fab fa-amazon fa-3x fa-fw header_icon_color"></i></a>
             </nav>
         </div>
-        </figure>
     </header>
 
     <main>
@@ -41,25 +46,14 @@
             <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at culpa ut rerum blanditiis voluptate odio consectetur, fugit dolorem commodi natus! Necessitatibus fugit veritatis alias natus, minus nulla ullam ad.
             </div>
+            This is <a href="html/portfolio.html">my portfolio</a> !! 
+            <h2>お気に入りアイテム</h2>
+            <h2>ポートフォリオ</h2>
     </main>
-
+    </div>
     <footer>
-        <small>
-            @ 2020 exmple.com
-        </small>
+        <small>Copyright&copy; <a href="index.html">Takuto's Home Page</a> All Rights Reserved.</small>
+        <span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
     </footer>
-         <!--
-        <form>
-            <p>今日の気分は？</p>
-            <select name="kibun">
-                <option value="saikou">めちゃいい！！</option>
-                <option value="botiboti">まあまあいい！</option>
-                <option value="hutuu">普通</option>
-                <option value="saiaku">最悪・・</option>
-            </select></form>
-       
-            <a href="#" onclick='changeLang("jp")'>ボタン</a>
-            <a href="#" onclick="js_alert()">ボタンを押してね!!</a>
-        -->
 </body>
 </html>
