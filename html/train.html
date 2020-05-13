@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/train.css">
+    <script type="text/javascript" src="../js/train.js"></script>
+</head>
+<body>
+    <!-- This is test-->
+    <div class="articl-body">
+    <h1>My Portfolio</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sequi nesciunt, mollitia alias ad sapiente dicta quo necessitatibus a aspernatur dignissimos. Perferendis necessitatibus quo molestias amet ea nostrum, delectus dolorem?</p>
+    <h2>Key point</h2>
+        <ul>
+            <li><span class="brand-color">Milk</span></li>
+            <li>Eggs</li>
+            <li>Bread</li>
+                <ul>
+                    <li>Cinnamon Raisin Bread</li>
+                    <li>Soudrou bread</li>
+                    <li>Whole wheat Bread</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>Milk</li>
+            <li>Bread</li>
+            <li>Carrots</li>
+        </ul>
+        <ol>
+            <li><strong>Wake up</strong></li>
+            <li>&rsquo;Brush up</li>
+            <li>Shower</li>
+            <li>Eat breakfast</li>
+        </ol>
+        <aside>
+            <dl>
+                <dt>Title</dt>
+                <dd>An Imaginary Book Title</dd>
+                <dt>Author:</dt>
+                <dd>Brad Schiff</dd>
+                <dt>NUmber of Pages:</dt>
+                <dd>500</dd>
+            </dl>
+        </aside>
+    </div><!-- /article-body end-->
+    <h2>What is input button?</h2>
+        <p>input value: <span id="span1"></span></p>
+        <form name="form">
+            <textarea name="textarea" value="1" cols="50" rows=5 maxlength="15">テスト</textarea>
+        </form>
+        <input type="button" class="btn btn-info" value="POST" onclick="clickBtn1()"/>
+        <input type="button" value="DELETE" onclick="clickBtn2()"/>
+        <input type="button" value="UPDATE" onclick="clickBtn3()"/>
+        <input type="button" value="ALERT" onclick="clickBtn4()"/>
+        <input type="button" onclick="location.href='https://www.google.com/search?q='+document.form.textarea.value" value="SEARCH">
+
+    <h2>Choosing between a set of options</h2>
+    <p>
+        <p>your color: <span id="sapn2"></span></p>
+        <label for="favoriteColor">Waht is your favorite color?</label>
+
+        <select name="favoriteColor" id="favoriteColor">
+            <option value="colorRed">Red</option>
+            <option value="colorBlue">Blue</option>
+            <option value="colorOrrange">Orrange</option>
+            <option value="colorYellow">Yellow</option>
+        </select>
+        <input type="button" value="post" onclick="getSelectColor()"/>
+
+        <p>radio options</p>
+        <fieldset>
+            <legend>What is you favorite Meal??</legend>
+            <input type="radio" name="favoriteMeal" id="breakfast"><label for="breakfast">Breakfast</label>
+            <input type="radio" name="favoriteMeal" id="brunch"><label for="brunch">Brunch</label>
+            <input type="radio" name="favoriteMeal" id="lunch"><label for="lunch">Lunch</label>
+        </fieldset>     
+        
+        <p>check box</p>
+        <fieldset>
+            <legend>What is you favorite Meal??</legend>
+            <input type="checkbox" name="favoriteMeal" id="breakfast1"><label for="breakfast1">Breakfast</label>
+            <input type="checkbox" name="favoriteMeal" id="brunch1"><label for="brunch1">Brunch</label>
+            <input type="checkbox" name="favoriteMeal" id="lunch1"><label for="lunch1">Lunch</label>
+        </fieldset>     
+    </p>
+
+    <h2>How to create a Table of Data??</h2>
+
+    　
+</body>
+</html>　　
