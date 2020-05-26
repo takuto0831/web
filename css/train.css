@@ -8,7 +8,7 @@ header p {
 }
 
 header p span {
-    color: blue;
+    background-color: lightblue;
 }
 
 .highlight {
@@ -19,6 +19,47 @@ footer .highlight {
     background-color: gray;
 }
 
-body {
-    color: green;
+html {
+    background-color: #869960;
+}
+
+.container {
+    background-color: #FFF;
+	width: 940px;
+	margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px 0px 10px;
+}
+
+.content-area {
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+}
+
+.main-area {
+	width: 60%;
+	float: left;
+}
+
+.sidebar {
+	width: 35%;
+	float: left;
+}
+
+.fix {
+	clear: both;
+}
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
 }
