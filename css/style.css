@@ -56,12 +56,34 @@ header #logo {
 .header_icon_color {
 	color: skyblue
 }
+/* Site Navigation */
+header .site_nav {
+    margin-top: 10px;
+}
+header .site_nav ul {
+    margin: 0;
+    padding: 0;
+}
+header .site_nav li {
+    list-style: none;
+	float: left;
+	/*width: 25%;*/
+}
 
+header .site_nav a {
+	text-decoration: none;
+    padding: 15px 40px;
+	border: 1px solid rgb(18, 74, 78);
+}
+
+header .site_nav a:hover {
+	background-color: rgb(18, 74, 78);
+}
 
 /*contentsブロック。mainとsubブロックを囲むボックスです。
 ---------------------------------------------------------------------------*/
 #contents {
-	padding: 30px 0;	/*上下、左右へのコンテンツ内の余白*/
+	padding: 40px 0;	/*上下、左右へのコンテンツ内の余白*/
 }
 
 /*メニュー
@@ -86,7 +108,7 @@ header #logo {
 #main {
 	overflow: hidden;
 	float: right;		/*右に回り込み*/
-	width: 70%;			/*ブロックの幅*/
+	width: 75%;			/*ブロックの幅*/
 }
 
 /*h3タグ*/
@@ -108,7 +130,7 @@ header #logo {
 #sub {
 	overflow: hidden;
 	float: left;		/*左に回り込み*/
-	width: 25%;			/*ブロックの幅*/
+	width: 20%;			/*ブロックの幅*/
 	/*
 	padding: 20px;
 	border: 3px solid black;
