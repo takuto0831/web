@@ -125,6 +125,10 @@ header .site_nav a:hover {
 #main p {
 	padding: 0 20px 20px;	/*上、左右、下への余白*/
 }
+/*ulタグ*/
+#main ul {
+	list-style-type: none;
+}
 /*subブロック
 ---------------------------------------------------------------------------*/
 #sub {
@@ -136,6 +140,19 @@ header .site_nav a:hover {
 	border: 3px solid black;
 	*/
 }
+/* Introduction of Table */
+table.profile-list　{
+	width: 80%;
+}
+table.profile-list td {
+	text-align: left;
+	background-color: #438b8d;
+	color: #fff;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+	border: 4px solid #438b8d;
+	vertical-align: top;
+}
+
 /*footerブロック
 ---------------------------------------------------------------------------*/
 footer {
@@ -145,3 +162,28 @@ footer {
 }
 footer a {text-decoration: none;}
 footer .pr {display: block;}
+
+/*Contact us page
+---------------------------------------------------------------------------*/
+
+/* styling forms */
+form.contact-us {
+    background-color: #ECECEC;
+    padding: 10px 20px;
+}
+form.contact-us .hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+input[type="email"],
+input[type="text"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+}

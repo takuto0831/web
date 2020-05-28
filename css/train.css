@@ -83,3 +83,49 @@ html {
 }
 
 
+/* Table */
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+table th {
+    text-align: left;
+    background-color: cadetblue;
+    color: #FFF;
+    text-shadow: 1px 1px 0 rgba(0, 0,0,0.6);
+}
+
+table th, table td {
+    border: 1px solid cadetblue;
+    padding: 10px;
+}
+
+table tbody tr:nth-child(even) td {
+    background-color: #ECECEC;
+}
+
+/* styling forms */
+form {
+    background-color: #ECECEC;
+    padding: 10px 20px;
+}
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="tel"]
+ {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+}
