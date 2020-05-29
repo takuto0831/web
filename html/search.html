@@ -9,6 +9,7 @@
     <!--<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">-->
     <link rel='stylesheet' href='../css/style.css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <script type="text/javascript" src="../js/main.js"></script>
 </head>
       
 <body>
@@ -24,8 +25,29 @@
             </nav>
         </header>
         <div id="contents">
-            <p>This page provide you good search engine. You can use logic of 'AND' and 'OR' easily. </p>
-
+            <p>google検索をより正確に使用できるtoolです. 複数のoption (and, or, -)を組み合わせて使用することができます. デフォルトで表示されている例では, 'マクドナルド'を除く'マック'に関する情報を調べることができます. (apple に関する情報が表示されやすくなります.)</p>
+            <!--descripation tools-->
+            <ol>
+                <li>空欄に検索したいワードを記入して, POSTボタンを押してください.</li>
+                <li>choice optionから, 検索 optionを選択してください. (AND: 選択したワード全てを含む結果を返します. OR: 選択したワードのどれか一つ以上を含む結果を返します. EXCEPT: 次に選択したワードを除去します.)</li> 
+                <li>組み合わせる検索ワードを記入して, POSTしてください. さらに, 検索ワードを追加する場合は項目2を繰り返し, 正しく検索文字列が表示されていたら, SEARCHボタンを押してください.</li>
+            </ol>
+            <!--Search Form-->
+            <p>検索文字列: <span id="search_text"></span></p>
+            <form class="super_search" name="super_search">
+                <textarea name="textarea" value="1" cols="50" rows=2 maxlength="15">マック -マクドナルド</textarea>
+                <!--text menu-->
+                <input type="button" onclick="post_text()" value="POST"/>
+                <input type="button" onclick="delete_text()" value="DELETE"/>
+                <input type="button" onclick="search_text()" value="SEARCH"/>
+                <!--option menu-->
+                <select id='pullMenu' name="pullMenu" onchange="add_text()">
+                    <option value="" selected >Choice option</option>
+                    <option value="+">AND</option>
+                    <option value="OR">OR</option>
+                    <option value="-">EXCEPT</option> <!--not need space-->
+                </select>
+            </form>
         </div>
         <!--/#contents-->
     </div> 
