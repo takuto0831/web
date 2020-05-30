@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*slide.cssと、lightbox.cssの読み込み
+/*slide.cssの読み込み
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @import url(slide.css);
 
@@ -89,19 +89,6 @@ header .site_nav a:hover {
 	padding: 40px 0;	/*上下、左右へのコンテンツ内の余白*/
 }
 
-/*メニュー
----------------------------------------------------------------------------*/
-/*メニューブロック全体の設定*/
-#menubar {
-	margin-bottom: 20px;	/*メニューブロックの下にあけるスペース*/
-}
-/*メニュー１個ごとの設定*/
-#menubar li a {
-	text-decoration: none;display: block;
-	padding: 10px;	/*ボックス内の余白*/
-	border-bottom: 2px dotted #ccc;	/*下の線の幅、線種、色*/
-}
-
 /*mainブロック
 ---------------------------------------------------------------------------*/
 #main {
@@ -131,29 +118,34 @@ header .site_nav a:hover {
 /*subブロック
 ---------------------------------------------------------------------------*/
 #sub {
-	overflow: hidden;
 	float: left;		/*左に回り込み*/
-	text-align: left;	
 	width: 20%;			/*ブロックの幅*/
 	padding: 20px;
 }
+
 /* Introduction of image icon */
 #sub img {
-	width: 80%;
+	width: 100%;
 	height: auto;
 }
 
 /* Introduction of Table */
-#sub table.profile-list　{
-	width: 80%;
-	height: auto;
+#sub #profile table.profile-list　{
+	width:100%;
+	table-layout: fixed;
+	font-size: 100%;
 }
+
 #sub table.profile-list td {
 	text-align: left;
 	background-color: #438b8d;
 	color: #fff;
 	border: 4px solid #438b8d;
 	vertical-align: top;
+}
+
+#sub .col-item, #sub .col-content  {
+	width: 20%;
 }
 
 
@@ -174,7 +166,7 @@ footer .pr {display: block;}
 form.contact_us,
 form.super_search {
     background-color: #ECECEC;
-    padding: 10px 20px;
+	padding: 10px 20px;
 }
 form.contact_us .hidden_label,
 form.super_search .hidden_label {
@@ -194,10 +186,21 @@ input[type="text"] {
     height: 40px;
 }
 
-/*画面幅480px以下の設定
+/*画面幅900px以下の設定
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width:480px){
+@media screen and (max-width:900px){
+	#main {
+		overflow: hidden;
+		float: right;		/*右に回り込み*/
+		width: 70%;			/*ブロックの幅*/
+	}
+}
+
+/*画面幅500px以下の設定
+
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:500px){
 	body {
 		font-size: 14px;	/*文字サイズ*/
 		background: #fff;	/*背景色*/
@@ -224,9 +227,15 @@ input[type="text"] {
 		float: none;
 		width: auto;	
 	}
-	#sub img {
-		width: 60%;
+	/* Introduction of image icon */
+	#sub #icon {
+		text-align:center;
 	}
+	#sub img {
+		width: 50%;
+		height: auto;
+	}
+
 	#main ul {
 		list-style: none;
 		padding-left: 15px;

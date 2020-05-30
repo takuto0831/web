@@ -25,17 +25,18 @@
             </nav>
         </header>
         <div id="contents">
-            <p>google検索をより正確に使用できるtoolです. 複数のoption (and, or, -)を組み合わせて使用することができます. デフォルトで表示されている例では, 'マクドナルド'を除く'マック'に関する情報を調べることができます. (apple に関する情報が表示されやすくなります.)</p>
+            <p>google検索をより正確に使用できるtoolです. 複数のoption (and, or, -)を組み合わせて使用することができます.<br> デフォルトで表示されている例では, 'マクドナルド'を除く'マック'に関する情報を調べることができます. (<u>apple社に関する情報が表示されやすくなります.</u>)</p>
             <!--descripation tools-->
+            <h2>How to use!?</h2>
             <ol>
                 <li>空欄に検索したいワードを記入して, POSTボタンを押してください.</li>
                 <li>choice optionから, 検索 optionを選択してください. (AND: 選択したワード全てを含む結果を返します. OR: 選択したワードのどれか一つ以上を含む結果を返します. EXCEPT: 次に選択したワードを除去します.)</li> 
                 <li>組み合わせる検索ワードを記入して, POSTしてください. さらに, 検索ワードを追加する場合は項目2を繰り返し, 正しく検索文字列が表示されていたら, SEARCHボタンを押してください.</li>
             </ol>
             <!--Search Form-->
-            <p>検索文字列: <span id="search_text"></span></p>
+            <p><u>検索文字列:</u><span id="search_text"></span></p>
             <form class="super_search" name="super_search">
-                <textarea name="textarea" value="1" cols="50" rows=2 maxlength="15">マック -マクドナルド</textarea>
+                <textarea name="textarea" value="1" cols="30" rows=2 maxlength="10">マック -マクドナルド</textarea><br>
                 <!--text menu-->
                 <input type="button" onclick="post_text()" value="POST"/>
                 <input type="button" onclick="delete_text()" value="DELETE"/>
