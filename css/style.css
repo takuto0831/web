@@ -144,6 +144,9 @@ header .site_nav a:hover {
 	vertical-align: top;
 }
 
+#sub .col-item, #sub .col-content  {
+	width: 20%;
+}
 /*footerブロック
 ---------------------------------------------------------------------------*/
 footer {
