@@ -187,6 +187,13 @@ input[type="text"] {
     height: 40px;
 }
 
+input[type="button"],
+#main-search #pullMenu {
+	border: 2px solid skyblue;
+	background-color: #fff;
+	border-radius: 0.5em;
+}
+
 #main-search,
 #main-contactus {
 	overflow: hidden;
@@ -195,7 +202,7 @@ input[type="text"] {
 }
 
 #main-search ol span {
-	border: 1px solid #ccc;
+	border: 2px solid skyblue;
 	background-color: #fff;
 	border-radius: 0.5em;
 	padding: 4px;
