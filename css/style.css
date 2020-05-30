@@ -98,7 +98,8 @@ header .site_nav a:hover {
 }
 
 /*h3タグ*/
-#main h3 {
+#main h3,
+#main-search h3 {
 	clear: both;
 	margin-bottom: 20px;	/*見出しの下(外側)に空けるスペース*/
 	color: #333;			/*文字色*/
@@ -108,7 +109,8 @@ header .site_nav a:hover {
 	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
 }
 /*段落(p)タグ*/
-#main p {
+#main p,
+#main-search p {
 	padding: 0 20px 20px;	/*上、左右、下への余白*/
 }
 /*ulタグ*/
@@ -195,7 +197,9 @@ input[type="text"] {
 	border: 1px solid #ccc;
 	background-color: #fff;
 	border-radius: 0.5em;
-	padding: 2px;
+	padding: 3px;
+	font-size: 80%;
+	
 }
 
 /*画面幅900px以下の設定
