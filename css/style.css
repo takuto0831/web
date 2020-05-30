@@ -39,12 +39,12 @@ a:hover {
 header {
 	position: relative;
 }
-/*header内のロゴ*/
-header #logo {
+/*header内のtitle*/
+header #title {
 	position: absolute;z-index: 1;
 	left: 5%;	/*headerの左から5%の場所に配置*/
-	top: 18%;	/*headerの上から18%の場所に配置*/
-	width: 20%;	/*画像の幅*/
+	top: 5%;	/*headerの上から18%の場所に配置*/
+	color: #fff;
 	background: #000;	/*背景色（古いブラウザ用）*/
 	background: rgba(0,0,0,0.5);	/*画像の背景色。0,0,0は黒の事で0.5は50%色がついた状態。*/
 }
@@ -144,11 +144,6 @@ header .site_nav a:hover {
 	vertical-align: top;
 }
 
-#sub .col-item, #sub .col-content  {
-	width: 20%;
-}
-
-
 /*footerブロック
 ---------------------------------------------------------------------------*/
 footer {
@@ -186,6 +181,20 @@ input[type="text"] {
     height: 40px;
 }
 
+#main-search,
+#main-contactus {
+	overflow: hidden;
+	float: left;		/*右に回り込み*/
+	width: 70%;			/*ブロックの幅*/
+}
+
+#main-search ol span {
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 0.5em;
+	padding: 2px;
+}
+
 /*画面幅900px以下の設定
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -205,6 +214,15 @@ input[type="text"] {
 		font-size: 14px;	/*文字サイズ*/
 		background: #fff;	/*背景色*/
 	}
+	header #title {
+		position: absolute;z-index: 1;
+		font-size: 50%;
+		left: 5%;	/*headerの左から5%の場所に配置*/
+		top: 5%;	/*headerの上から18%の場所に配置*/
+		color: #fff;
+		background: #000;	/*背景色（古いブラウザ用）*/
+		background: rgba(0,0,0,0.5);	/*画像の背景色。0,0,0は黒の事で0.5は50%色がついた状態。*/
+	}
 	#contents {
 		padding: 25px 0;	/*上下、左右へのコンテンツ内の余白*/
 	}
@@ -223,7 +241,10 @@ input[type="text"] {
 	}
 	/*main,subブロック
 	---------------------------------------------------------------------------*/
-	#main,#sub {
+	#main,
+	#sub,
+	#main-search,
+	#main-contactus {
 		float: none;
 		width: auto;	
 	}

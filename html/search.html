@@ -15,7 +15,22 @@
 <body>
     <div id="container"><!-- container -->
         <header>
-            <h1>Google Search</h1>
+            <h1 id="title">Google Search</h1>
+            <aside id="mainimg">
+                <img src="../images/header1.jpeg" alt="" class="slide0">
+                <img src="../images/header1.jpeg" alt="" class="slide1">
+                <img src="../images/header2.jpeg" alt="" class="slide2">
+                <img src="../images/header3.jpeg" alt="" class="slide3">
+            </aside>   
+            <div class="header_icon_position">
+                <nav>
+                    <a href="https://www.facebook.com/takuto.kotsubo"><i class="fab fa-facebook header_icon_size fa-fw header_icon_color"></i></a>
+                    <a href="https://www.linkedin.com/in/takut0/"><i class="fab fa-linkedin header_icon_size fa-fw header_icon_color"></i></a>
+                    <a href="https://twitter.com/airspace_nobo"><i class="fab fa-twitter header_icon_size fa-fw header_icon_color"></i></a>
+                    <a href="https://github.com/takuto0831"><i class="fab fa-github header_icon_size fa-fw header_icon_color"></i></a>
+                    <a href="https://hub.docker.com/u/takut0"><i class="fab fa-docker header_icon_size fa-fw header_icon_color"></i></a>
+                </nav>
+            </div>
             <nav class="site_nav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -25,30 +40,33 @@
             </nav>
         </header>
         <div id="contents">
-            <p>google検索をより正確に使用できるtoolです. 複数のoption (and, or, -)を組み合わせて使用することができます.<br> デフォルトで表示されている例では, 'マクドナルド'を除く'マック'に関する情報を調べることができます. (<u>apple社に関する情報が表示されやすくなります.</u>)</p>
-            <!--descripation tools-->
-            <h2>How to use!?</h2>
-            <ol>
-                <li>空欄に検索したいワードを記入して, POSTボタンを押してください.</li>
-                <li>choice optionから, 検索 optionを選択してください. (AND: 選択したワード全てを含む結果を返します. OR: 選択したワードのどれか一つ以上を含む結果を返します. EXCEPT: 次に選択したワードを除去します.)</li> 
-                <li>組み合わせる検索ワードを記入して, POSTしてください. さらに, 検索ワードを追加する場合は項目2を繰り返し, 正しく検索文字列が表示されていたら, SEARCHボタンを押してください.</li>
-            </ol>
-            <!--Search Form-->
-            <p><u>検索文字列:</u><span id="search_text"></span></p>
-            <form class="super_search" name="super_search">
-                <textarea name="textarea" value="1" cols="30" rows=2 maxlength="10">マック -マクドナルド</textarea><br>
-                <!--text menu-->
-                <input type="button" onclick="post_text()" value="POST"/>
-                <input type="button" onclick="delete_text()" value="DELETE"/>
-                <input type="button" onclick="search_text()" value="SEARCH"/>
-                <!--option menu-->
-                <select id='pullMenu' name="pullMenu" onchange="add_text()">
-                    <option value="" selected >Choice option</option>
-                    <option value="+">AND</option>
-                    <option value="OR">OR</option>
-                    <option value="-">EXCEPT</option> <!--not need space-->
-                </select>
-            </form>
+            <div id="main-search">
+                <p>google検索をより正確に使用できるツールです. 複数の検索オプション(and, or, -)を組み合わせて使用することができます.</p>
+                <p>dデフォルトで表示されている例では, 'マクドナルド'を除く'マック'に関する情報を調べることができます. (<u>ノートpcに関する情報が表示されやすくなります.</u>)</p>
+                <!--descripation tools-->
+                <h2>How to use!?</h2>
+                <ol>
+                    <li>空欄に検索したいワードを記入して, <span>POST</span>ボタンを押してください.</li>
+                    <li>choice optionから, 検索 optionを選択してください. (AND: 選択したワード全てを含む OR: 選択したワードのどれか一つ以上を含む EXCEPT: 次に選択したワードを除去)</li> 
+                    <li>組み合わせる検索ワードを記入して, <span>POST</span>してください. さらに, 検索ワードを追加する場合は項目2を繰り返し, 正しく検索文字列が表示されていたら, <span>SEARCH</span>ボタンを押してください.</li>
+                </ol>
+                <!--Search Form-->
+                <p><u>検索文字列:</u><span id="search_text"></span></p>
+                <form class="super_search" name="super_search">
+                    <textarea name="textarea" value="1" cols="30" rows=2 maxlength="10">マック -マクドナルド</textarea><br>
+                    <!--text menu-->
+                    <input type="button" onclick="post_text()" value="POST"/>
+                    <input type="button" onclick="delete_text()" value="DELETE"/>
+                    <input type="button" onclick="search_text()" value="SEARCH"/>
+                    <!--option menu-->
+                    <select id='pullMenu' name="pullMenu" onchange="add_text()">
+                        <option value="" selected >Choice option</option>
+                        <option value="+">AND</option>
+                        <option value="OR">OR</option>
+                        <option value="-">EXCEPT</option> <!--not need space-->
+                    </select>
+                </form>
+            </div>
         </div>
         <!--/#contents-->
     </div> 
